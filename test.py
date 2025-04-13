@@ -18,3 +18,9 @@ model = tf.keras.Sequential([
 ])
 
 # Compile the model
+
+model.compile(optimizer='adam', loss='mean_squared_error')
+
+# Train the model
+history = model.fit(x, y, epochs=100, verbose=0)
+
